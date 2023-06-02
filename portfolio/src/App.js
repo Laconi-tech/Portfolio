@@ -15,7 +15,7 @@ function App() {
       <MyNavbar />
       <MyProfil />
       {/* <MyProjectCard /> */}
-      <MyProjets />
+      {/* <MyProjets /> */}
       </div>
     </div>
     </header>
