@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavbar from './components/Navbar';
 import MyProfil from './components/Profil';
 import MyProjets from "./components/Projets";
+import BasicExample from './components/Cards';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -12,9 +14,11 @@ function App() {
     <div className="App">
       <div>
       <MyNavbar />
-      <MyProfil />
+      {/* <MyProfil /> */}
       {/* <MyProjectCard /> */}
+      {/* <BasicExample /> */}
       <MyProjets />
+      <Contact />
       </div>
     </div>
     </header>

@@ -4,62 +4,48 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import BasicExample from './Cards';
 import Morpion from "/home/lako/document/site_portfolio/portfolio/src/images/morpion.png";
-import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/images/puissance4.png'
+import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/images/puissance4.png';
+import Skycrapper from '/home/lako/document/site_portfolio/portfolio/src/images/skycrapper.png';
 
 function MyProjets() {
-  const [index, setIndex] = useState(0);
+    return (
+      <div id="projets">
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={Morpion} className='projetImg' />
+        <Card.Body>
+          <Card.Title>Morpion</Card.Title>
+          <Card.Text>
+          Réplique du jeu "Tic Tac Toe" en JavaScript fait à l'occasion d'un examen.
+          </Card.Text>
+          <Button variant="primary"  href="https://github.com/Laconi-tech/Morpion" target="_blank">Voir sur Github</Button>
+        </Card.Body>
+      </Card>
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={Puissance4} className='projetImg' />
+        <Card.Body>
+          <Card.Title>Puissance4</Card.Title>
+          <Card.Text>
+          Projet développé dans le cadre d'un projet scolaire pour créer une version du jeu "Puissance 4" avec une grille modulable.
+          </Card.Text>
+          <Button variant="primary"  href="https://github.com/Laconi-tech/Puissance4" target="_blank">Voir sur Github</Button>
+        </Card.Body>
+      </Card>
 
-  return (
-    <div id='carousel'>
-    <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
-      <Carousel.Item>
-      <img
-          className="carouselpics"
-          src={Morpion}
-          alt="First slide"
-          width={"40%"}
-        />
-        <Carousel.Caption>
-        <h3 id='projetTitle'>Ce projet consiste à recréer le jeu du
-                  Morpion en utilisant JavaScript.</h3>
-                  <Button
-                  variant="primary"
-                  href="https://github.com/Laconi-tech/Morpion"
-                  target="_blank"
-                >
-                  Voir sur Github
-                </Button>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-      <img
-          className="carouselpics"
-          src={Puissance4}
-          alt="First slide"
-          width={"600rem"}
-        />
-        <Carousel.Caption>
-        <h3 id='projetTitle'>Ce projet consiste à recréer le jeu du
-                  Morpion en utilisant JavaScript.</h3>
-                  <Button
-                  variant="primary"
-                  href="https://github.com/Laconi-tech/Puissance4"
-                  target="_blank"
-                >
-                  Voir sur Github
-                </Button>
-        </Carousel.Caption>
-      </Carousel.Item>
-      
-    </Carousel>
-    </div>
-  );
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={Skycrapper} />
+        <Card.Body>
+          <Card.Title>Skycrapper Solver</Card.Title>
+          <Card.Text>
+          Solveur du jeu de puzzle "SkyScrapers" développé en langage C. Il est conçu pour résoudre automatiquement des grilles de SkyScrapers en utilisant du "backtracking".
+          </Card.Text>
+          <Button variant="primary"  href="https://github.com/Laconi-tech/Skyscrapers-Solver" target="_blank">Voir sur Github</Button>
+        </Card.Body>
+      </Card>
+      </div>
+    );
 }
 
 export default MyProjets;
