@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Morpion from "/home/lako/document/site_portfolio/portfolio/src/images/morpion.png";
+import Morpion from '/home/lako/document/site_portfolio/portfolio/src/images/morpion.png';
 import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/images/puissance4.png';
 import Skycrapper from '/home/lako/document/site_portfolio/portfolio/src/images/skycrapper.png';
 
