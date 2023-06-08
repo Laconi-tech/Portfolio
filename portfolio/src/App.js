@@ -1,27 +1,29 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import MyNavbar from './components/Navbar';
-import MyProfil from './components/Profil';
+import MyNavbar from "./components/Navbar";
+import MyProfil from "./components/Profil";
 import MyProjets from "./components/Projets";
-import BasicExample from './components/Cards';
-import Contact from './components/Contact';
-
+import ContactUs from "./components/Contact";
 
 function App() {
   return (
-    <header>
-    <div className="App">
-      <div>
-      <MyNavbar />
-      <MyProfil />
-      {/* <MyProjectCard /> */}
-      {/* <BasicExample /> */}
-      {/* <MyProjets /> */}
-      <Contact />
-      </div>
-    </div>
-    </header>
+    <html>
+      <body>
+        <div className="App">
+          {/* <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+          <div id="title"> */}
+            <MyNavbar />
+            <MyProfil />
+            <MyProjets />
+            <ContactUs />
+          {/* </div> */}
+        </div>
+      </body>
+     </html>
   );
 }
 

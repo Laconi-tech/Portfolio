@@ -5,13 +5,14 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import BasicExample from './Cards';
-import Morpion from "/home/lako/document/site_portfolio/portfolio/src/components/morpion.png";
+import Morpion from "/home/lako/document/site_portfolio/portfolio/src/images/morpion.png";
 import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/images/puissance4.png';
 import Skycrapper from '/home/lako/document/site_portfolio/portfolio/src/images/skycrapper.png';
 
 function MyProjets() {
     return (
       <div id="projets">
+        <div className='card'>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Morpion} className='projetImg' />
         <Card.Body>
@@ -22,6 +23,7 @@ function MyProjets() {
           <Button variant="primary"  href="https://github.com/Laconi-tech/Morpion" target="_blank">Voir sur Github</Button>
         </Card.Body>
       </Card>
+        </div>
 
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Puissance4} className='projetImg' />

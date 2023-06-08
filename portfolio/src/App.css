@@ -1,46 +1,35 @@
-header {
-  /* background-color: coral; */
-  /* background-color: #282c34; */
+/* header {
+  background-color: coral;
+  background-color: #282c34;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at bottom, #3b1552 0%, #090a0f 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#profil {
+  /* color: white; */
+  margin: 0;
+}
+
+#pProfil{
+  margin: 0;
 }
 
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 @keyframes pics {
   from {
@@ -98,35 +87,22 @@ header {
   --card-width: calc(var(--card-height) / 1.5);
 }
 
-
-body {
-  /* min-height: 100vh;
-  display: flex;
-  background-color: #212534;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box; */
-}
-
-
-.card {
-  /* background: #191c29;
-  width: var(--card-width);
-  height: var(--card-height);
-  padding: 3px; */
-  /* position: relative; */
-  /* border-radius: 6px; */
-  /* justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
-  cursor: pointer; */
-  /* font-family: cursive; */
-}
+ .card {
+   background: #191c29;
+   width: var(--card-width);
+   height: var(--card-height);
+   padding: 3px;
+   position: relative;
+   border-radius: 6px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   font-size: 1.5em;
+   color: rgb(88 199 250 / 0%);
+   cursor: pointer;
+   font-family: cursive;
+ }
 
 .card:hover {
   color: rgb(138, 10, 224);
@@ -180,12 +156,4 @@ body {
   100% {
     --rotate: 360deg;
   }
-}
-
-/* a {
-  color: #212534;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 2rem;
-} */
+} 

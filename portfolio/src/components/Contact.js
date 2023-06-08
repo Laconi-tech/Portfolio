@@ -1,63 +1,31 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const FormStyles = styled.form`
-width: 100%;
-.form-group{
-    width: 100%;
-}
-`;
+const ContactUs = () => {
+  const form = useRef();
 
-function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    return (
-      <div>
-        <FormStyles>
-        <div className="form-group">
-            <label htmlFor="name">
-              Your Name
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </label>
-          </div>
+    emailjs.sendForm('service_ot7levi', 'template_3ivi87e', e.target, 'DA0wQet_Akzp42uGA')
+        .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
-          <div className="form-group">
-            <label htmlFor="email">
-              Your email
-              <input
-                type="text"
-                id="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </label>
-          </div>
+  return (
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+  );
+};
 
-          <div className="form-group">
-            <label htmlFor="email">
-              Your message
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </label>
-          </div>
-          <button type="submit">Send</button>
-        </FormStyles>
-      </div>
-    );
-}
-
-export default Contact;
+export default ContactUs;

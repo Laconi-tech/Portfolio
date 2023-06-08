@@ -1,19 +1,24 @@
+import MyProfil from "./Profil";
 
-function test(){
+function MyTest() {
     return (
         <div>
-            {/* <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> */}
-#stars
-#stars2
-#stars3
-#title
-  %span
-    PURE CSS
-  %br
-  %span
-    PARALLAX PIXEL STARS
+            <MyProfil />
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            <div id='title'>
+            <span>
+                {/* PURE CSS */}
+                Portfolio
+            </span>
+            <br></br>
+            <span>
+                {/* PARALLAX PIXEL STARS */}
+            </span>
+            </div>
         </div>
-      );
+    );
 }
 
-export default test;
+export default MyTest;
