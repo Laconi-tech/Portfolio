@@ -6,6 +6,7 @@ import MyNavbar from "./components/Navbar";
 import MyProfil from "./components/Profil";
 import MyProjets from "./components/Projets";
 import ContactUs from "./components/Contact";
+import MyCv from "./components/Intro";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <div id="stars3"></div>
           <div id="title"> */}
             <MyNavbar />
-            <MyProfil />
+            <MyCv />
+            {/* <MyProfil /> */}
             <MyProjets />
             <ContactUs />
           {/* </div> */}
