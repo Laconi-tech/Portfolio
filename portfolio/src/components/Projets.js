@@ -1,8 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Morpion from '/home/lako/document/site_portfolio/portfolio/src/images/morpion.png';
-import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/images/puissance4.png';
-import Skycrapper from '/home/lako/document/site_portfolio/portfolio/src/images/skycrapper.png';
+import Morpion from '/home/lako/document/site_portfolio/portfolio/src/morpion.png';
+import Puissance4 from '/home/lako/document/site_portfolio/portfolio/src/puissance4.png';
+import Skycrapper from '/home/lako/document/site_portfolio/portfolio/src/skycrapper.png';
 
 function MyProjets() {
     return (
