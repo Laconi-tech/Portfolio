@@ -7,7 +7,7 @@ function Apropos(){
 
 function contenu(){
     const myElement = (
-        <div id="profil" className="centered">
+        <div id="profil">
             <h1 id="h1Profil">À Propos de moi :</h1>
             <p id="pProfil">Du haut de mes 21 ans j’ai décidé de me réorienter à la Web@cadémie,
                  une école spécialisée dans le développement web.
