@@ -1,4 +1,4 @@
-import CV from '/home/lako/document/site_portfolio/portfolio/src/CV GOMIS Nicolas.pdf'
+import CV from '../CV GOMIS Nicolas.pdf'
 import Space from '../space.jpg';
 import MyProfil from './Profil';
 

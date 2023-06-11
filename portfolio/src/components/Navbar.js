@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import CV from '/home/lako/document/site_portfolio/portfolio/src/CV GOMIS Nicolas.pdf'
+import CV from '../CV GOMIS Nicolas.pdf'
 
 function MyNavbar() {
   return (
