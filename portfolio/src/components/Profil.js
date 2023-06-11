@@ -24,9 +24,9 @@ function contenu() {
         différents.
       </p>
       <h3 style={{ color: "white", fontFamily: "fantasy" }}>Mon cv et mes réseaux juste ici <img width="30" height="30" src="https://img.icons8.com/fluency/48/long-arrow-down.png" alt="long-arrow-down"/></h3>
-      <a href={CV} download={CV} ><img width="100" height="100" src="https://img.icons8.com/nolan/100/resume.png" alt="cv"/></a>
-      <a href='https://github.com/Laconi-tech' target="_blank"><img width="100" height="100" src="https://img.icons8.com/nolan/100/github.png" alt="github"/></a>
-      <a href='https://www.linkedin.com/in/nicolas-gomis-dev/' target="_blank"><img width="100" height="100" src="https://img.icons8.com/nolan/100/linkedin.png" alt="linkedin"/></a>
+      <a href={CV} download={CV}  ><img width="100" height="100" src="https://img.icons8.com/nolan/100/resume.png" alt="cv" data-aos="flip-left"/></a>
+      <a href='https://github.com/Laconi-tech' target="_blank"><img width="100" height="100" src="https://img.icons8.com/nolan/100/github.png" alt="github" data-aos="flip-left"/></a>
+      <a href='https://www.linkedin.com/in/nicolas-gomis-dev/' target="_blank"><img width="100" height="100" src="https://img.icons8.com/nolan/100/linkedin.png" alt="linkedin" data-aos="flip-left"/></a>
     </div>
   );
   return myElement;
