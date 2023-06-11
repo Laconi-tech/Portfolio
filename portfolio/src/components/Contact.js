@@ -1,5 +1,12 @@
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Form from "react-bootstrap/Form";
+import Button from 'react-bootstrap/Button';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const ContactUs = () => {
   const form = useRef();
@@ -16,15 +23,39 @@ const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div id="contact" style={{ margin: "50px 100px 30px 100px"}}>
+    <Form ref={form} onSubmit={sendEmail}>
+    <div data-aos="zoom-in-right">  
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Name"
+        className="mb-3"
+      >
+        <Form.Control type="text" placeholder="your_name" name="user_name"/>
+      </FloatingLabel>
+        </div>
+
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Email address"
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="name@example.com" name="user_email" />
+      </FloatingLabel>
+
+      <FloatingLabel controlId="floatingTextarea2" label="Un commentaire ?">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: "100px" }}
+          name="message"
+        />
+      </FloatingLabel>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+    </div>
   );
 };
 

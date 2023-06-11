@@ -21,8 +21,9 @@ const ContactUs2 = () => {
   };
 
   return (
+    <div id="contact" style={{ margin: "50px 0px 30px 0px"}}>
     <Form ref={form} onSubmit={sendEmail}>
-//       <FloatingLabel
+      <FloatingLabel
         controlId="floatingInput"
         label="Name"
         className="mb-3"
@@ -50,6 +51,7 @@ const ContactUs2 = () => {
         Submit
       </Button>
     </Form>
+    </div>
   );
 };
 

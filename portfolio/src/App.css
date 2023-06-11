@@ -27,7 +27,8 @@ code {
     , #610b926b, #840e9b56 43%, #4e00c250);
     backdrop-filter: blur(10px);
   width: 100%;
-  padding-top: 15px;
+  padding-top: 70px;
+  margin-bottom: 100px;
 }
 
 #pProfil{

@@ -23,8 +23,8 @@ function App() {
             {/* <MyCv /> */}
             <MyProfil />
             <MyProjets />
-            <ContactUs2 />
-            {/* <ContactUs /> */}
+            {/* <ContactUs2 /> */}
+            <ContactUs />
             {/* <Mtest /> */}
           {/* </div> */}
         </div>

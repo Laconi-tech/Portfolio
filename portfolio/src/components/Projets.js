@@ -4,11 +4,16 @@ import Morpion from '../morpion.png';
 import Puissance4 from '../puissance4.png';
 import Skycrapper from '../skycrapper.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function MyProjets() {
+  AOS.init();
     return (
       <>
       <h1 id="h1Profil">Certain de mes projets:</h1>
       <div id="projets">
+      <div data-aos="fade-up">
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Morpion} className='projetImg' />
         <Card.Body className="carte">
@@ -19,7 +24,9 @@ function MyProjets() {
           <Button variant="primary"  href="https://github.com/Laconi-tech/Morpion" target="_blank">Voir sur Github</Button>
         </Card.Body>
       </Card>
+      </div>
 
+      <div data-aos="fade-up">
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Puissance4} className='projetImg' />
         <Card.Body className="carte">
@@ -30,7 +37,9 @@ function MyProjets() {
           <Button variant="primary"  href="https://github.com/Laconi-tech/Puissance4" target="_blank">Voir sur Github</Button>
         </Card.Body>
       </Card>
+      </div>
 
+      <div data-aos="fade-up">
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Skycrapper} className='projetImg' />
         <Card.Body className="carte">
@@ -41,6 +50,7 @@ function MyProjets() {
           <Button variant="primary"  href="https://github.com/Laconi-tech/Puissance4" target="_blank">Voir sur Github</Button>
         </Card.Body>
       </Card>
+      </div>
       </div>
       </>
     );
