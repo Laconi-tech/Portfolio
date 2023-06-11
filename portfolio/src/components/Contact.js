@@ -25,6 +25,7 @@ const ContactUs = () => {
 
   return (
     <div id="contact" style={{ margin: "50px 100px 30px 100px"}}>
+      <h1 style={{color: "white", fontFamily: "fantasy", marginBottom: "30px"}}>Contactez-Moi :</h1>
     <Form ref={form} onSubmit={sendEmail}>
     <div data-aos="zoom-in-right">  
       <FloatingLabel

@@ -11,7 +11,7 @@ function MyProjets() {
   AOS.init();
     return (
       <>
-      <h1 id="h1Profil">Certain de mes projets:</h1>
+      <h1 id="h1Profil">Certain de mes projets :</h1>
       <div id="projets">
       <div data-aos="fade-up">
       <Card style={{ width: '18rem' }}>
@@ -47,7 +47,7 @@ function MyProjets() {
           <Card.Text>
           Solveur du jeu de puzzle "SkyScrapers" développé en langage C. Il résoud des grilles de SkyScrapers en utilisant du "backtracking".
           </Card.Text>
-          <Button variant="primary"  href="https://github.com/Laconi-tech/Puissance4" target="_blank">Voir sur Github</Button>
+          <Button variant="primary"  href="https://github.com/Laconi-tech/Skyscrapers-Solver" target="_blank">Voir sur Github</Button>
         </Card.Body>
       </Card>
       </div>
