@@ -1,4 +1,4 @@
-import CV from '/home/lako/document/site_portfolio/portfolio/src/CV GOMIS Nicolas.pdf';
+import CV from '../CV GOMIS Nicolas.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

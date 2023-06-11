@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 
 const ContactUs = () => {
   const form = useRef();
+  AOS.init();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,6 +36,7 @@ const ContactUs = () => {
       </FloatingLabel>
         </div>
 
+        <div data-aos="zoom-in-right">
       <FloatingLabel
         controlId="floatingInput"
         label="Email address"
@@ -42,7 +44,9 @@ const ContactUs = () => {
       >
         <Form.Control type="email" placeholder="name@example.com" name="user_email" />
       </FloatingLabel>
+      </div>
 
+      <div data-aos="zoom-in-right">
       <FloatingLabel controlId="floatingTextarea2" label="Un commentaire ?">
         <Form.Control
           as="textarea"
@@ -51,9 +55,12 @@ const ContactUs = () => {
           name="message"
         />
       </FloatingLabel>
-      <Button variant="primary" type="submit">
+      {/* </div>
+      <div data-aos="zoom-in-right" style={{marginBottom: "100px"}}> */}
+      <Button variant="primary" type="submit" style={{margin: "10px"}}>
         Submit
       </Button>
+      </div>
     </Form>
     </div>
   );
