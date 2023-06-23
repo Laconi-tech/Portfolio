@@ -10,7 +10,7 @@ function MyNavbar() {
       <Container>
 
         <Navbar.Brand href="#home">GOMIS Nicolas Portfolio</Navbar.Brand>
-        {/* <Navbar.Brand href=""><img width="100" height="100" src={pdp} alt="github"/></Navbar.Brand> */}
+        <Navbar.Brand href=""><img width="100" height="100" src={pdp} alt="github"/></Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
